@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // header.html을 가져오는 함수
     async function loadHeader() {
         try {
-            const response = await fetch("header.html");
+            const response = await fetch("https://sayoungae.github.io/young/test/header.html");
             const htmlContent = await response.text();
 
             // 가져온 내용을 특정 요소에 추가
