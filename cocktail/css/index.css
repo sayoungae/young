@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+@keyframes rotateC {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
+#wrap{width:100%;}
+.container{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%); 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.inner{width:700px; height:700px; position:relative;}
+.menu{width:330px; height:330px; position:absolute; left:50%; top:50%; transform: translate(-50%,-50%);border-radius: 50%;}
+.menu .option{
+    width:230px;
+    height: fit-content;
+    position:absolute;
+    background-color: pink;
+    transform: rotate(225deg);
+    top: -6px;
+    left: -145px;
+}
+.menu .option li{
+    cursor: pointer;
+    --_speed: 4;
+    padding: 4px 12px 1px 29px;
+    background-color:rgba(255,255,255,0.6);
+    border-radius: 5px;
+    position:absolute;
+    transform-origin: -145px 50%;
+    /* transform: translate(46px, 0); */
+    animation: rotateC calc(var(--_speed) * 36s) linear infinite;
+    z-index:1;
+}
+.menu .option li:hover{
+    background-color:rgba(255,255,255,1);
+    background: rgba(255,255,255, 1);
+    cursor: pointer;
+    font-size: 20px;
+}
+.menu .option:hover li{
+    animation-play-state: paused;
+}
+
+.option > li:nth-child(1) {  animation-delay:  calc(var(--_speed) * -1s); }
+.option > li:nth-child(2) {  animation-delay: calc(var(--_speed) *  -2s); }
+.option > li:nth-child(3) {  animation-delay: calc(var(--_speed) *  -3s); }
+.option > li:nth-child(4) {  animation-delay: calc(var(--_speed) *  -4s); }
+.option > li:nth-child(5) {  animation-delay: calc(var(--_speed) *  -5s); }
+.option > li:nth-child(6) {  animation-delay: calc(var(--_speed) *  -6s); }
+.option > li:nth-child(7) {  animation-delay: calc(var(--_speed) *  -7s); }
+.option > li:nth-child(8) {  animation-delay: calc(var(--_speed) *  -8s); }
+.option > li:nth-child(9) {  animation-delay: calc(var(--_speed) *  -9s); }
+.option > li:nth-child(10) { animation-delay: calc(var(--_speed) * -10s); }
+.option > li:nth-child(11) { animation-delay: calc(var(--_speed) * -11s); }
+.option > li:nth-child(12) { animation-delay: calc(var(--_speed) * -12s); }
+.option > li:nth-child(13) { animation-delay: calc(var(--_speed) * -13s); }
+.option > li:nth-child(14) { animation-delay: calc(var(--_speed) * -14s); }
+.option > li:nth-child(15) { animation-delay: calc(var(--_speed) * -15s); }
+.option > li:nth-child(16) { animation-delay: calc(var(--_speed) * -16s); }
+.option > li:nth-child(17) { animation-delay: calc(var(--_speed) * -17s); }
+.option > li:nth-child(18) { animation-delay: calc(var(--_speed) * -18s); }
+.option > li:nth-child(19) { animation-delay: calc(var(--_speed) * -19s); }
+.option > li:nth-child(20) { animation-delay: calc(var(--_speed) * -20s); }
+.option > li:nth-child(21) { animation-delay: calc(var(--_speed) * -21s); }
+.option > li:nth-child(22) { animation-delay: calc(var(--_speed) * -22s); }
+.option > li:nth-child(23) { animation-delay: calc(var(--_speed) * -23s); }
+.option > li:nth-child(24) { animation-delay: calc(var(--_speed) * -24s); }
+.option > li:nth-child(25) { animation-delay: calc(var(--_speed) * -25s); }
+.option > li:nth-child(26) { animation-delay: calc(var(--_speed) * -26s); }
+.option > li:nth-child(27) { animation-delay: calc(var(--_speed) * -27s); }
+.option > li:nth-child(28) { animation-delay: calc(var(--_speed) * -28s); }
+.option > li:nth-child(29) { animation-delay: calc(var(--_speed) * -29s); }
+.option > li:nth-child(30) { animation-delay: calc(var(--_speed) * -30s); }
+.option > li:nth-child(31) { animation-delay: calc(var(--_speed) * -31s); }
+.option > li:nth-child(32) { animation-delay: calc(var(--_speed) * -32s); }
+.option > li:nth-child(33) { animation-delay: calc(var(--_speed) * -33s); }
+.option > li:nth-child(34) { animation-delay: calc(var(--_speed) * -34s); }
+.option > li:nth-child(35) { animation-delay: calc(var(--_speed) * -35s); }
+.option > li:nth-child(36) { animation-delay: calc(var(--_speed) * -36s); }
+
+
+.content{
+    width:320px;
+    height:320px;
+    border-radius: 50%;
+    background-color: #FFA99F;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.content .inner{position: relative;  width:100%; height:100%; }
+.content .shadow{
+    width: 55%;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 100px rgba(0,0,0, 0.05);
+    position:absolute;
+    left: 38px;
+    bottom: 79px;
+}
+
+.content .title{
+    color:#fff;
+    font-size:20px;
+    font-weight: 600;
+    font-family: 'Prompt', sans-serif;
+    position:absolute;
+    left:50%;
+    bottom:30px;
+    transform: translateX(-50%);
+}
+.cup{
+    width: 160px;
+    height: 162px;
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.ingredients{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    clip-path: path('m 0 0 q 4.59 145.8 34.425 155.52 c 29.835 8.1 68.85 8.1 96.39 0 q 29.835 -9.72 29.835 -155.52 C 143 11 16 13 0 0 Z');
+    
+}
+.ingredients li{
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50% / 20%;
+    font-size: 12px;
+    transition: all 1s ease-in-out;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.ingredients :is(.vodka, .white_rum, .gin, .sweet_sour_mix,.tequila, .tonic ,.sparkling_water, .sugar){background-color: rgba(255, 255, 255,0.8);}
+.ingredients :is(.vodka_citron, .cointreau, .agave_tequila, .triple_sec, .lime_juice, .lemon_juice){background-color:rgba(255 ,228 ,82 , 0.8);}
+.ingredients :is( .disaronno, .rum, .grenadine_syrup){background-color:rgba(151, 22, 1,0.8); color:#fff;}
+.ingredients .whiskey{background: #cf8127;}
+.ingredients .calua{background-color:#3D2713; color:#fff;}
+.ingredients .midori{background-color:#39A330; color:#fff;}
+.ingredients .blue_curaso{background-color:#1C3886; color:#fff;}
+.ingredients .orange_juice{background-color: #F6AF2F;}
+.ingredients .pineapple_juice{background-color: #F6D403;}
+.ingredients .cranberry_juice{background-color: #B60003; color:#fff;}
+.ingredients .salt, .sugar{background-color: #f2f2f2; background-image: url('../image/salt.png'); background-size: 100%; background-repeat: no-repeat;}
+
+.ingredients :is(.coconut_cream, .milk, .simple_syrup){background-color: rgba(255, 253, 244,1);}
+.ingredients .coke{background: radial-gradient(circle, rgba(233,96,53,1) 0%, rgba(86,61,51,1) 100%);}
+.ingredients .mint{background-image: url('../image/mint.png'); background-size: 100%; background-repeat: no-repeat; color:#fff;}
+.ingredients .orange_twist{background-image: url('../image/orange_twist.png'); background-size: 100%; background-repeat: no-repeat; background-position: center center; color:#000;}
+
+.cup .ingredients :is( .vodka, .white_rum, .gin, .sweet_sour_mix,.tequila, .tonic ,.sparkling_water, .sugar, .salt,
+.vodka_citron, .cointreau, .agave_tequila, .triple_sec, .lime_juice, .lemon_juice, .coconut_cream, .milk, .simple_syrup)::before{
+    border-bottom: 1px dashed rgba(75, 75, 75, 0.5);
+    opacity: 0.8;
+}
+.ingredients li::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    transition: all 1s ease-in-out;
+    opacity: 0.1;
+    /* background: #fff; */
+    z-index: inherit; 
+}
+.cup .ingredients :is(.coconut_cream, .milk, .simple_syrup)::before{background-color: rgb(255 250 223 / 50%); }
+
+.cup .ingredients::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    box-shadow:
+    inset -18px 0px 4px -10px rgba(255,255,255, 0.7),
+    inset 42px -22px 12px -10px rgba(0,0,0, 0.03),
+    inset 0 -22px 12px -10px rgba(0,0,0, 0.2),
+    inset 20px 0 10px -10px rgba(0,0,0, 0.2);
+}
+.cup::before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(63deg, rgba(253, 253, 253, 0.7) 9%, rgba(238, 238, 238, 0.7) 100%);
+    border-radius: 50%;
+    box-shadow: 
+    0 1px 2px 0px rgba(0,0,0, 0.05),
+    inset 0 0 1px 2px rgba(0,0,0, 0.05);
+
+}
+.cup::after{
+    content: '';
+    background: #fff;
+    width: 0%;
+    height: 0%;
+    scale: 1.15 0.7;
+    transform-origin: 0% 0%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+
+
+/* Tequila-Sunrise */
+.tequila-sunrise .ingredients .tequila{
+    height:30%;
+    padding-top: 20px;
+    margin-top: -23px;
+}
+.tequila-sunrise .ingredients .orange_juice{
+    height:60%;
+    padding-top: 10px;
+    margin-top: -18px;
+}
+.tequila-sunrise .ingredients .grenadine_syrup{
+    height:15%;
+}
+.tequila-sunrise .ingredients .grenadine_syrup::before{height:15px;}
+
+/* pina-colada */
+.pina-colada  .ingredients .white_rum{height:30%; padding-top: 10px; margin-top: -21px; }
+.pina-colada  .ingredients .white_rum::before{border:0;}
+.pina-colada  .ingredients .pineapple_juice{height:45%; padding-top: 10px; margin-top: -15px; }
+.pina-colada  .ingredients .coconut_cream{height:30%; padding-top: 20px; border-top: 1px dashed rgba(75, 75, 75, 0.3); }
+
+/* long-island */
+.long-island .ingredients .gin{height:23%; padding-top: 22px; margin-top:-15px;}
+.long-island .ingredients .vodka{height:23%; padding-top: 22px; margin-top:-15px;}
+.long-island .ingredients .white_rum{height:23%; padding-top: 22px;margin-top:-15px;}
+.long-island .ingredients .tequila{height:23%; padding-top: 25px; margin-top:-25px;}
+.long-island .ingredients .cointreau{height:23%; padding-top: 22px; margin-top:-25px;}
+.long-island .ingredients .lemon_juice{height:25%; padding-top: 20px; margin-top:-15px;}
+.long-island .ingredients .simple_syrup{height:25%; padding-top: 20px; margin-top:-25px;}
+.long-island .ingredients .coke{height:25%; padding-top: 20px; margin-top:-15px;}
+
+/* midori-sour */
+.midori-sour .ingredients .midori{height:35%; padding-top:15px; margin-top:-20px;}
+.midori-sour .ingredients .sweet_sour_mix{height:70%; padding-top:20px; }
+.midori-sour .ingredients .sweet_sour_mix::before{background-color:rgba(243, 243, 243 ,0.8); height:36px;}
+/* gin-tonic */
+.gin-tonic .ingredients .gin{height:30%; padding-top:15px; margin-top:-20px;}
+.gin-tonic .ingredients .tonic{height:60%; padding-top:15px; }
+.gin-tonic .ingredients .tonic::before{background-color:rgba(243, 243, 243 ,0.8); height:36px;}
+/* mojito */
+.mojito .ingredients .white_rum{height:25%; padding-top:15px; margin-top: -23px;}
+.mojito .ingredients .lime_juice{height:23%; padding-top:25px; margin-top: -25px;}
+.mojito .ingredients .sparkling_water{height:30%; padding-top:25px; margin-top: -30px;}
+.mojito .ingredients .mint{height:50%;  padding-top:15px; margin-top: -20px;}
+.mojito .ingredients .sugar{height:23%; padding-top:25px; margin-top: -20px;}
+/* white-russian */
+.white-russian .ingredients .vodka{height:45%; padding-top:15px; margin-top:-20px;}
+.white-russian .ingredients .calua{height:25%; padding-top:15px; margin-top:-20px;}
+.white-russian .ingredients .milk{height:40%; padding-top:15px;}
+
+/* calua-milk */
+.calua-milk .ingredients .calua{height:30%; padding-top:15px; margin-top:-20px;}
+.calua-milk .ingredients .milk{height:65%; padding-top:15px;}
+/* daiquiri */
+.daiquiri .ingredients .white_rum{height:65%; padding-top:15px; margin-top:-20px;}
+.daiquiri .ingredients .lime_juice{height:23%; padding-top:25px; margin-top:-20px;}
+.daiquiri .ingredients .sugar{height:23%; padding-top:25px; }
+/* blue-hawaii */
+.blue-hawaii .ingredients .white_rum{height:25%; padding-top:15px; margin-top:-20px;}
+.blue-hawaii .ingredients .vodka{height:25%; padding-top:15px; margin-top:-20px;}
+.blue-hawaii .ingredients .sweet_sour_mix{height:25%; padding-top:20px; margin-top:-22px;}
+.blue-hawaii .ingredients .blue_curaso{height:20%; padding-top:20px; margin-top:-20px;}
+.blue-hawaii .ingredients .pineapple_juice{height:45%; padding-top:15px;}
+
+/* god-father */
+.god-father .ingredients .whiskey{height:40%;  padding-top:15px; margin-top:-20px;}
+.god-father .ingredients .disaronno{height:20%;  padding-top:15px; margin-top:-20px;}
+.god-father .ingredients .disaronno::before{height:15px;}
+.god-father .ingredients .orange_twist{height:40%; padding-top:15px;}
+/* god-mother */
+.god-mother .ingredients .vodka{height:40%;  padding-top:15px; margin-top:-20px;}
+.god-mother .ingredients .disaronno{height:20%;  padding-top:15px; margin-top:-20px;}
+.god-mother .ingredients .disaronno::before{height:15px;}
+.god-mother .ingredients .orange_twist{height:40%; padding-top:15px;}
+/* margarita */
+.margarita .ingredients .tequila{height:45%;  padding-top:15px; margin-top:-20px;}
+.margarita .ingredients .triple_sec{height:25%;  padding-top:20px; margin-top:-20px;}
+.margarita .ingredients .lime_juice{height:25%;  padding-top:20px;}
+/* cosmopolitan */
+.cosmopolitan .ingredients .vodka_citron{height:45%;  padding-top:15px; margin-top:-20px;}
+.cosmopolitan .ingredients .cointreau{height:25%;  padding-top:18px; margin-top:-23px;}
+.cosmopolitan .ingredients .cranberry_juice{height:30%;  padding-top:15px; margin-top:-20px;}
+.cosmopolitan .ingredients .lime_juice{height:25%;  padding-top:15px;}
+
+
