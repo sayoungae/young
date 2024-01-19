@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const htmlContent = await response.text();
 
             // 가져온 내용을 특정 요소에 추가
-            document.getElementById("headerContainer").innerHTML = htmlContent;
+            document.getElementById("header").innerHTML = htmlContent;
         } catch (error) {
             console.error("Header를 로드하는 중 오류 발생:", error);
         }
