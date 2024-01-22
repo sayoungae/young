@@ -7,16 +7,12 @@ module.exports = {
         //__dirname : 파일이 위치하고 있는 경로를 알려주는 node.js 의 변수
         filename:"index_bundle.js"
     },
-    module:{
-        rules:[
+    module: {
+        rules: [
             {
                 test: /\.css$/,
-                use:[
-                    'css-loader',
-                    'style-loader'
-                ],
-                
-            }
-        ]
-    }
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
 }
