@@ -1,6 +1,7 @@
 
 // 20231117
 $(document).ready(function(){
+    console.log("확인");
     // textarea
     $(".resizeHght").on("input", function() {
         this.style.height = "auto";

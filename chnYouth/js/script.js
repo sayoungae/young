@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const response = await fetch("https://sayoungae.github.io/young/chnYouth/footer.html");
             const htmlContent = await response.text();
 
-            // 가져온 내용을 특정 요소에 추가
             document.getElementById("footer").innerHTML = htmlContent;
         } catch (error) {
             console.error("footer 로드하는 중 오류 발생:", error);
