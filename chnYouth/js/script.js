@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     // 페이지가 로드되면 실행될 코드
-    async function loadHeadFile() {
-        try {
-            const response = await fetch("https://sayoungae.github.io/young/chnYouth/incloude/head.html");
-            const htmlContent = await response.text();
+    // async function loadHeadFile() {
+    //     try {
+    //         const response = await fetch("https://sayoungae.github.io/young/chnYouth/incloude/head.html");
+    //         const htmlContent = await response.text();
 
-            document.querySelector("head").innerHTML = htmlContent;
-        } catch (error) {
-            console.error("head 로드하는 중 오류 발생:", error);
-        }
-    }
+    //         document.querySelector("head").innerHTML = htmlContent;
+    //     } catch (error) {
+    //         console.error("head 로드하는 중 오류 발생:", error);
+    //     }
+    // }
     async function loadSkipNav() {
         try {
             const response = await fetch("https://sayoungae.github.io/young/chnYouth/incloude/skipNav.html");
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     //함수 호출
-    loadHeadFile();
+    // loadHeadFile();
     loadSkipNav();
     loadHeader();
     loadAllmenu();
