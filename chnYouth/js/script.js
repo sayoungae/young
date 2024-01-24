@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     async function loadAllmenu() {
         try {
-            const response = await fetch("https://sayoungae.github.io/young/chnYouth/incloude/allmenu.html");
+            const response = await fetch("https://sayoungae.github.io/young/chnYouth/incloude/allMenu.html");
             const htmlContent = await response.text();
 
             document.getElementById("allmenu").innerHTML = htmlContent;
