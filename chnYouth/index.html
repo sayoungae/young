@@ -2,7 +2,11 @@
 <!-- 20231229 -->
 <!DOCTYPE html>
 <html lang="ko">
-    <?include"../incoud/head.html";?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이나믹충남청년</title>
+</head>
 <script>
     $(document).ready(function(){
         AOS.init({
@@ -13,11 +17,11 @@
     })
 </script>
 <body>
-    <?include"../incoud/skipNav.html";?>
+    <div id="skipNav"></div>
     <div id="wrap" class="">
         <!-- HEADER -->
-        <?include"../incoud/header.html";?>
-        <?include"../incoud/allMenu.html";?>
+        <header id="header"></header>
+        <div id="allmenu"></div>
         <!-- // HEADER -->
         <!-- container -->
         <div id="container">
@@ -655,8 +659,9 @@
             </section>
         </div>
         <!-- footer -->
-        <?include"../incoud/footer.html";?>
+        <footer id="footer"></footer>
         <!-- //footer -->
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
