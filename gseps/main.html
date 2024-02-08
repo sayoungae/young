@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS EPS</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- https://www.gseps.com/ -->
+    <div id="wrapper">
+        <header id="header">
+            <div class="h_inner">
+                <div class="h_content">
+                    <h1><img src="/images/logo.svg" alt="GSEPS" /></h1>
+                    <div class="gnb_wrap">
+                        <nav id="gnb">
+                            <ul>
+                                <li><a href="#none">기업소개</a></li>
+                                <li><a href="#none">사업영역</a></li>
+                                <li><a href="#none">지속가능경영</a></li>
+                                <li><a href="#none">소식</a></li>
+                                <li><a href="#none">채용</a></li>
+                            </ul>
+                        </nav>
+                        <div class="gnb_menu">
+                            <div class="gnb_menu_cont">
+                                <ul>
+                                    <li><a href="#none">GS EPS</a></li>
+                                    <li><a href="#none">연혁</a></li>
+                                    <li><a href="#none">재무정보</a></li>
+                                    <li><a href="#none">CI</a></li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#none">친환경에너지</a></li>
+                                    <li><a href="#none">스마트 발전소</a></li>
+                                    <li><a href="#none">그린이노베이션</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#none">ESG 체계</a></li>
+                                    <li><a href="#none">환경경영</a></li>
+                                    <li><a href="#none">사회공헌</a></li>
+                                    <li><a href="#none">안전보건경영</a></li>
+                                    <li><a href="#none">윤리경영</a></li>
+                                </ul>
+                                <ul></ul>
+                                <ul>
+                                    <li><a href="#none">직무소개</a></li>
+                                    <li><a href="#none">성장로드맵</a></li>
+                                    <li><a href="#none">복리후생</a></li>
+                                    <li><a href="#none">채용안내</a></li>
+                                    <li><a href="#none">채용공고</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="side_top_menu">
+                        <li><a href="#none">협력사</a></li>
+                        <li><a href="#none">발전소 출입일정</a></li>
+                        <li><a href="#none"><img src="/images/icon_language.svg" alt="영문사이트" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="container">
+            <div class="cont_inner">
+                <section class="m_visual">
+                    <div class="visual_text">
+                        <p>우리는 스마트 발전소와 친환경 에너지로</p>
+                        <p class="bld">밝고 깨끗한 세상을 만들겠습니다.</p>
+                        <div class="scrolldown">
+                            <img src="/images/scrolldown_badge.svg" alt="" />
+                            <img src="/images/scrolldwon_arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="visual_imgs">
+                        <ul>
+                            <li class="imgLine_01">
+                                <div class="img_block">
+                                    <video id="video" autoplay="" preload="none" muted="muted" playsinline="" loop="">
+                                        <source src="/images/sky.mp4" type="video/mp4">
+                                        <source src="false" type="video/webm">
+                                        <source src="false" type="video/ogg">
+                                    </video>
+                                </div>
+                            </li>
+                            <li class="imgLine_02">
+                                <div class="img_block"><img src="/images/main-banner1-1.jpg" alt="" /></div>
+                                <div class="img_block"><img src="/images/main-banner1-2.jpg" alt="" /></div>
+                            </li>
+                            <li class="imgLine_03">
+                                <div class="img_block_Main" id="mSwiper1">
+                                    <!-- 슬라이드 -->
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img_box">
+                                                <video autoplay="" preload="none" muted="muted" playsinline="" loop="">
+                                                    <source src="/images/24.mp4" type="video/mp4">
+                                                    <source src="false" type="video/webm">
+                                                    <source src="false" type="video/ogg">
+                                                </video>
+                                            </div>
+                                            <div class="txt_box">
+                                                Grow Sustainably,<br />
+                                                친환경으로 지속가능한 성장을 만듭니다
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img_box">
+                                                <img src="/images/21.jpg" alt="" />
+                                            </div>
+                                            <div class="txt_box">
+                                                지속 가능한 지구를 위한 에너지,<br />
+                                                GS EPS가 만들어갑니다
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img_box"><img src="/images/22.jpg" alt="" /></div>
+                                            <div class="txt_box">
+                                                더 나은 미래를 위한 탄소중립 발걸음,<br />
+                                                GS EPS가 함께 합니다
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img_box"><img src="/images/23.jpg" alt="" /></div>
+                                            <div class="txt_box">
+                                                GS EPS는 디지털 혁신으로<br />
+                                                발전사업의 미래를 선도합니다
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 슬라이드 -->
+                                    <div class="dock">
+                                        <div class="autoplay-progress">
+                                            <svg viewBox="0 0 48 48">
+                                                <circle cx="24" cy="24" r="20"></circle>
+                                            </svg>
+                                            <button type="button" class="pBtn on">
+                                                <img src="/images/main_play.svg" alt="" />
+                                            </button>
+                                        </div>
+                                        <p class="mSwiper-btn-prev"><img src="/images/main_prev.svg" alt="이전" /></p>
+                                        <p class="mSwiper-fraction"></p>
+                                        <p class="mSwiper-btn-next"><img src="/images/main_next.svg" alt="다음" /></p>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li class="imgLine_02">
+                                <div class="img_block"><img src="/images/main-banner1-3.jpg" alt="" /></div>
+                                <div class="img_block">
+                                    <video autoplay="" preload="none" muted="muted" playsinline="" loop="">
+                                        <source src="/images/building.mp4" type="video/mp4">
+                                        <source src="false" type="video/webm">
+                                        <source src="false" type="video/ogg">
+                                    </video>
+                                </div>
+                            </li>
+                            <li class="imgLine_01">
+                                <div class="img_block"><img src="/images/main-banner1-4.jpg" alt="" /></div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="m_content cont1">
+                    <div class="eco_area">
+                        <div class="cont_title eco_tit ani">
+                            <p class="tit">더 나은 미래를 위한</p>
+                            <p class="tit">친환경 에너지를 만들어갑니다</p>
+                            <p class="tit">GS EPS는 친환경 에너지의 선도 기업으로서 지속 가능한 발전을 향해 나아갑니다.</p>
+                        </div>
+                        <div class="eco_cont">
+                            <a href="#none" class="img_block01 ani">
+                                <div class="eco_cont_tit">
+                                    <div class="bld">천연가스</div>
+                                    <div class="arrow_box">
+                                        <p class="arrow"><img src="/images/arrow_large.svg" alt="바로가기 아이콘" /></p>
+                                        <p class="arrow hvr"><img src="/images/arrow_large_hover.svg" alt="바로가기 아이콘">
+                                        </p>
+                                    </div>
+                                </div>
+                                <span>GS EPS는 국내 최초의 LNG발전사업자로서 청정연료를 이용한 LNG발전을 통해 친환경 전력 생산에 앞장서고
+                                    있습니다.</span>
+                            </a>
+                            <a href="#none" class="img_block02 ani">
+                                <div class="eco_cont_tit">
+                                    <div class="bld">바이오매스</div>
+                                    <div class="arrow_box">
+                                        <p class="arrow"><img src="/images/arrow_large.svg" alt="바로가기 아이콘" /></p>
+                                        <p class="arrow hvr"><img src="/images/arrow_large_hover.svg" alt="바로가기 아이콘">
+                                        </p>
+                                    </div>
+                                </div>
+                                <span>GS EPS는 아시아 최초의 100MW급 바이오매스 발전소를
+                                    건설하여, 현재 총 210MW 규모의 바이오매스 발전소를
+                                    운영하고 있습니다.</span>
+                            </a>
+                            <a href="#none" class="img_block03 ani">
+                                <div class="eco_cont_tit">
+                                    <div class="bld">태양광</div>
+                                    <div class="arrow_box">
+                                        <p class="arrow"><img src="/images/arrow_large.svg" alt="바로가기 아이콘" /></p>
+                                        <p class="arrow hvr"><img src="/images/arrow_large_hover.svg" alt="바로가기 아이콘">
+                                        </p>
+                                    </div>
+                                </div>
+                                <span>GS EPS는 건물 옥상 및 유휴부지를 활용한 태양광 발전소를 당진 발전소 내에서
+                                    운영하고 있습니다.</span>
+
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="m_content cont2">
+                    <div class="innovation_area">
+                        <div class="cont_title ani">
+                            <p class="tit">혁신적인 디지털전환(DX)을 통해</p>
+                            <p class="tit">발전사업을 한 발 앞서서 이끌고 있습니다</p>
+                            <p class="tit">빅데이터와 인공지능(AI) 등 다양한 신기술을 접목한 스마트 발전소를 운영하여 설비의 효율성, 안전성 및 신뢰성을 높이고자 노력하고
+                                있습니다.</p>
+                        </div>
+                        <div class="link_b ani">
+                            <a href="#none" title="스마트 발전소 자세히 보기">
+                                <span>스마트 발전소 자세히 보기 </span>
+                            </a>
+                        </div>
+                        <div class="innovation_img ani">
+                            <p><img src="/images/dx1.jpg" alt="" /></p>
+                            <p><img src="/images/dx2.jpg" alt="" /></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="m_content cont3">
+                    <div class="story_area">
+                        <div class="lft_box">
+                            <div class="story_tit ani">
+                                세상을 함께<br />
+                                변화시키는 우리의<br />
+                                이야기
+                            </div>
+                            <div class="tab_select ani">
+                                <a href="#none" rel="storyTab1" title="전체" class="storyMenu on">전체</a>
+                                <a href="#none" rel="storyTab2" title="DX" class="storyMenu">DX</a>
+                                <a href="#none" rel="storyTab3" title="GS EPS 라이프" class="storyMenu">GS EPS 라이프</a>
+                                <a href="#none" rel="storyTab4" title="사회공헌" class="storyMenu">사회공헌</a>
+                                <a href="#none" rel="storyTab5" title="회사소식" class="storyMenu">회사소식</a>
+                                <a href="#none" title="소식더보기" class="">소식더보기</a>
+                            </div>
+                        </div>
+                        <div class="rig_box">
+                            <div class="tab_content">
+                                <!-- 전체 -->
+                                <div id="storyTab1" class="tabCont on">
+                                    <ul>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">사회공헌</p>
+                                                    <div>
+                                                        <div class="title">GS EPS, 23년 당진 환경사랑 미술대회 개최</div>
+                                                        <span class="tags">#2023.10.20</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1698389401.jpg" alt="" /></div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">회사소식</p>
+                                                    <div>
+                                                        <div class="title">LG전자 지붕형 태양광 발전 PPA 업무협약식</div>
+                                                        <span class="tags">#2022.09.08</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box">
+                                                    <img src="/images/1695290597.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">GS EPS 라이프</p>
+                                                    <div>
+                                                        <div class="title">당진 SMART SQUARE를 소개합니다.</div>
+                                                        <span class="tags">#복리후생 #발전소</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1695084970.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- DX -->
+                                <div id="storyTab2" class="tabCont">
+                                    <ul>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">DX</p>
+                                                    <div>
+                                                        <div class="title">디지털 발전소의 미래</div>
+                                                        <span class="tags">#DX이야기 #스마트발전소</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1698389401.jpg" alt="" /></div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">DX</p>
+                                                    <div>
+                                                        <div class="title">국내 발전소 최초 5G로<br /> 진화한 '스마트 발전소'</div>
+                                                        <span class="tags">#DX이야기 #스마트발전소</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box">
+                                                    <img src="/images/1695290597.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">DX</p>
+                                                    <div>
+                                                        <div class="title">GS EPS, '스마트 발전소'<br />구축에 앞장서다</div>
+                                                        <span class="tags">#DX이야기 #스마트발전소</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1695084970.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- GS EPS 라이프 -->
+                                <div id="storyTab3" class="tabCont">
+                                    <ul>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">GS EPS 라이프</p>
+                                                    <div>
+                                                        <div class="title">GS EPS, 23년 당진 환경사랑 미술대회 개최</div>
+                                                        <span class="tags">#2023.10.20</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1698389401.jpg" alt="" /></div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">GS EPS 라이프</p>
+                                                    <div>
+                                                        <div class="title">LG전자 지붕형 태양광 발전 PPA 업무협약식</div>
+                                                        <span class="tags">#2022.09.08</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box">
+                                                    <img src="/images/1695290597.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">GS EPS 라이프</p>
+                                                    <div>
+                                                        <div class="title">당진 SMART SQUARE를 소개합니다.</div>
+                                                        <span class="tags">#복리후생 #발전소</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1695084970.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 사회공헌 -->
+                                <div id="storyTab4" class="tabCont">
+                                    <ul>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">사회공헌</p>
+                                                    <div>
+                                                        <div class="title">GS EPS, 23년 당진 환경사랑 미술대회 개최</div>
+                                                        <span class="tags">#2023.10.20</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1698389401.jpg" alt="" /></div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">사회공헌</p>
+                                                    <div>
+                                                        <div class="title">LG전자 지붕형 태양광 발전 PPA 업무협약식</div>
+                                                        <span class="tags">#2022.09.08</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box">
+                                                    <img src="/images/1695290597.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">사회공헌</p>
+                                                    <div>
+                                                        <div class="title">당진 SMART SQUARE를 소개합니다.</div>
+                                                        <span class="tags">#복리후생 #발전소</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1695084970.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 회사소식 -->
+                                <div id="storyTab5" class="tabCont">
+                                    <ul>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">회사소식</p>
+                                                    <div>
+                                                        <div class="title">GS EPS, 23년 당진 환경사랑 미술대회 개최</div>
+                                                        <span class="tags">#2023.10.20</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1698389401.jpg" alt="" /></div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">회사소식</p>
+                                                    <div>
+                                                        <div class="title">LG전자 지붕형 태양광 발전 PPA 업무협약식</div>
+                                                        <span class="tags">#2022.09.08</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box">
+                                                    <img src="/images/1695290597.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="ani">
+                                            <a href="#none">
+                                                <div class="txt_box">
+                                                    <p class="category">회사소식</p>
+                                                    <div>
+                                                        <div class="title">당진 SMART SQUARE를 소개합니다.</div>
+                                                        <span class="tags">#복리후생 #발전소</span>
+                                                    </div>
+                                                </div>
+                                                <div class="img_box"><img src="/images/1695084970.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="m_content cont4">
+                    <div class="sustainable_area">
+                        <div class="cont_title ani">
+                            <p class="tit">지속 가능한 변화로</p>
+                            <p class="tit">더 밝고 깨끗한 세상으로 함께 나아갑니다</p>
+                            <p class="tit">GS EPS는 다양한 이해관계자의 ESG 경영 실천 요구 확대에 부응하기 위해 노력하고 있습니다.</p>
+                        </div>
+                        <ul class="sustainable_cont">
+                            <li class="ani">
+                                <a href="#none" title="ESG">
+                                    <p><img src="/images/sus_01.svg" alt="" /></p>
+                                    <div><span>ESG</span><img src="/images/arrow_white.svg" alt="바로가기아이콘"
+                                            class="arrow_w">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ani">
+                                <a href="#none" title="환경">
+                                    <p><img src="/images/sus_02.svg" alt="" /></p>
+                                    <div><span>환경</span><img src="/images/arrow_white.svg" alt="바로가기아이콘"
+                                            class="arrow_w">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ani">
+                                <a href="#none" title="사회">
+                                    <p><img src="/images/sus_03.svg" alt="" /></p>
+                                    <div><span>사회</span><img src="/images/arrow_white.svg" alt="바로가기아이콘"
+                                            class="arrow_w">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ani">
+                                <a href="#none" title="거버넌스">
+                                    <p><img src="/images/sus_04.svg" alt="" /></p>
+                                    <div><span>거버넌스</span><img src="/images/arrow_white.svg" alt="바로가기아이콘"
+                                            class="arrow_w">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="m_content cont5">
+                    <div class="shortcut_area">
+                        <ul class="short_grid ani">
+                            <li>
+                                <div class="txt_only">
+                                    GREEN<br />
+                                    INNOVATION
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none" class="hv_img">
+                                    <div class="short_cont_tit">
+                                        <p>탄소중립</p>
+                                        <div class="arrow_box">
+                                            <p class="arrow"><img src="/images/arrow_large.svg" alt="바로가기 아이콘" /></p>
+                                            <p class="arrow hvr">
+                                                <img src="/images/arrow_large_hover.svg" alt="바로가기 아이콘">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="dec">GS EPS는 재생에너지의 보급과 확산으로 온실가스
+                                        배출량을 감축하고 타 기업과 협력함으로써 탄소중립
+                                        달성이라는 목표를 실현해 가고 있습니다.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="txt_only">
+                                    <span>건강한 지구를 위해</span><br />
+                                    GS EPS는<br /> 친환경적인 혁신에<br /> 앞장섭니다
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none" class="hv_img">
+                                    <div class="short_cont_tit">
+                                        <p>미래/벤처투자</p>
+                                        <div class="arrow_box">
+                                            <p class="arrow"><img src="/images/arrow_large.svg" alt="바로가기 아이콘" /></p>
+                                            <p class="arrow hvr"><img src="/images/arrow_large_hover.svg"
+                                                    alt="바로가기 아이콘"></p>
+                                        </div>
+                                    </div>
+                                    <p class="dec">GS EPS는 친환경 미래 기술을 보유한 파트너사와 함께 미래성장동력을 지속적으로 확보하고
+                                        있습니다.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="f_inner"></div>
+        </footer>
+    </div>
+</body>
+
+
+</html>
